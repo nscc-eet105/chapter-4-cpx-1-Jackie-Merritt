@@ -2,12 +2,11 @@ from adafruit_circuitplayground import cp
 import time
 
 def on():
-    for num in range(1, 10):
-        cp.pixels[num] = (0, 100, 100) #
-        #else:sec()
+    for num in range(0, 10):
+        cp.pixels[num] = (0, 100, 100)
 
 def off():
-    for num in range(1, 10):
+    for num in range(0, 10):
         cp.pixels[num] = (0, 0, 0)
 
 while True:
@@ -15,9 +14,3 @@ while True:
         on()
     else:
         off()
-
-
-
-
-
-
